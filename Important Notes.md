@@ -37,22 +37,22 @@ This is **done in the interest of efficiency.**
 
 - It is important to understand that **new allocates memory for an object during run time**.
 
-Box b1 = new Box();
+- Box b1 = new Box();
 Box b2 = b1;
-b1 and b2 will both refer to the same object. The assignment of b1 to b2 did not allocate any memory or copy any part
-of the original object. It simply makes b2 refer to the same object as does b1. Thus, any changes made to the object
-through b2 will affect the object to which b1 is referring, since they are the same object.
-When you assign one object reference variable to another object reference variable, you are not creating a copy of the
-object, you are only making a copy of the reference.
+**b1 and b2 will both refer to the same object**. The assignment of b1 to b2 did not allocate any memory or copy any part
+of the original object. It simply makes **b2 refer to the same object as does b1**. Thus, **any changes made to the object
+through b2 will affect the object to which b1 is referring**, since they are the same object.
+***When you assign one object reference variable to another object reference variable, you are not creating a copy of the
+object, you are only making a copy of the reference.***
 
-int square(int i){
+- int square(int i){
     return i * i;
 }
-A parameter is a variable defined by a method that receives a value when the method is called. For example,
+A **parameter is a variable defined by a method that receives a value when the method is called**. For example,
 in square( int i), i is a parameter. An argument is a value that is passed to a method when it is invoked.
 For example, square(100) passes 100 as an argument. Inside square( ), the parameter i receives that value.
 
-NOTE:
+- NOTE:
 Bus bus = new Bus();
 lhs(reference i.e. bus) is looked be compiler & rhs (object i.e. new Bus()) is looked by jvm
 
